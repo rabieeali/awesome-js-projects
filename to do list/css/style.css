@@ -1,0 +1,12 @@
+li {
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.close-btn {
+  margin: 0 1rem;
+  color: red;
+}
