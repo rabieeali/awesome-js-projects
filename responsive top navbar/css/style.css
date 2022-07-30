@@ -1,0 +1,87 @@
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:not(.logo):hover {
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  color: rgb(140, 46, 228);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  gap: 1rem;
+}
+.responsive-menu {
+  display: none;
+}
+
+.hamburger {
+  position: relative;
+  cursor: pointer;
+  width: 24px;
+}
+.top,
+.middle,
+.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(138, 43, 226);
+  width: 24px;
+  height: 2px;
+  transition: all ease 0.5s;
+}
+.middle {
+  transform: translateY(7px);
+}
+.bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(360deg);
+  transform: translateY(0);
+}
+
+.open .top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .middle {
+  display: none;
+}
+
+.open .bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.box {
+  display: none;
+}
+.show {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  gap: 0.5rem;
+  background-color: rgba(227, 198, 255, 0.244);
+}
+@media (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  .responsive-menu {
+    display: block;
+  }
+}
