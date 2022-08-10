@@ -7,6 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style -->
     <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            gap: 1rem;
+        }
+
         .win {
             color: green;
         }
@@ -24,6 +42,7 @@
 
 <body>
     <main>
+        <h1>Smile Baby 😘</h1>
         <section class="btn-wrapper"></section>
         <h2 class="result"></h2>
     </main>
@@ -33,8 +52,6 @@
         const choices = ["rock", "paper", "scissors"];
         const result = document.querySelector(".result");
         const btnWrapper = document.querySelector(".btn-wrapper");
-        btnWrapper.style.display = "flex";
-        btnWrapper.style.gap = "1rem";
 
         choices.map((choice) => {
             const btn = document.createElement("button");
