@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <style>
+        .win {
+            color: green;
+        }
+
+        .lose {
+            color: red;
+        }
+
+        .draw {
+            color: purple;
+        }
+    </style>
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <main>
+        <section class="btn-wrapper"></section>
+        <h2 class="result"></h2>
+    </main>
+
+    <!-- script -->
+    <script>
+        const choices = ["rock", "paper", "scissors"];
+        const result = document.querySelector(".result");
+        const btnWrapper = document.querySelector(".btn-wrapper");
+        btnWrapper.style.display = "flex";
+        btnWrapper.style.gap = "1rem";
+
+        choices.map((choice) => {
+            const btn = document.createElement("button");
+            choice.innerHTML = btn;
+            btn.innerText = choice;
+            btn.style.cursor = "pointer";
+            btnWrapper.append(btn);
+            btn.addEventListener("click", () => {
+                const randomNumber = Math.floor(Math.random() * choices.length);
+                switch (btn.innerText + choices[randomNumber]) {
+                    case "rockscissors":
+                    case "scissorspaper":
+                    case "paperrock":
+                        return (result.innerHTML = `<strong class="win">WIN!</strong><br/><span>your choice was ${btn.innerText} <br/> and the computer choice was ${choices[randomNumber]}.</span>`);
+                    case "scissorsrock":
+                    case "rockpaper":
+                    case "paperscissors":
+                        return (result.innerHTML = `<strong class="lose">LOST!</strong><br/><span> your choice was ${btn.innerText} <br/> and the computer choice was ${choices[randomNumber]}.</span>`);
+                    case "rockrock":
+                    case "paperpaper":
+                    case "scissorsscissors":
+                        return (result.innerHTML = `<strong class="draw">DRAW!</strong><br/><span> your choice was ${btn.innerText} <br/> and the computer choice was ${choices[randomNumber]}.</span>`);
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

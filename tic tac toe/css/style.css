@@ -1,0 +1,31 @@
+.container {
+  min-width: 30%;
+  margin: auto;
+}
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 20rem;
+}
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  min-width: 6em;
+  min-height: 6em;
+  cursor: pointer;
+  font-size:1rem;
+  font-weight: 900;
+}
+
+.util {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
