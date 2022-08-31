@@ -1,0 +1,38 @@
+.p-2 {
+    padding: 2rem;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.my-2 {
+    margin: 2rem auto;
+}
+
+.img-custom {
+    width: 200px;
+    height: 300px;
+    padding: 1rem;
+}
+
+.card {
+    height: 460px;
+    cursor: pointer;
+    transition: all ease-in-out .4s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 900 !important;
+    color: rgb(13, 238, 28) !important;
+}
+
+.fs {
+    font-weight: 900 !important;
+    font-size: 1.25rem;
+}
