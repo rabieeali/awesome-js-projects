@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="container">
+        <header>
+            <h1>Search <span>Vidz</span></h1>
+            <p>Sreach All Youtube Videos</p>
+        </header>
+        <section>
+            <form id="search-form" name="search-form" autocomplete="off" onsubmit="return search()">
+                <div class="fieldcontainer">
+                    <input type="text" id="query" class="search-field" placeholder="Search Youtube Videos ...">
+                    <input type="submit" name="search-btn" id="search-btn" value="&#128269;">
+                </div>
+
+            </form>
+            <ul id="results"></ul>
+            <div id="buttons"></div>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2022 , All Rights Reserved</p>
+        </footer>
+    </main>
+
+
+
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="./js/app.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">my<span>Website</span> </div>
+            <div class="menu">
+                <a href="#hero">Home</a>
+                <a href="#cards">Tech</a>
+                <a href="#contact-us">Stay In Touch</a>
+            </div>
+            <div></div>
+            <div class="hamburger">
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </nav>
+        <div id="resp" class="">
+            <a href="#hero">Home</a>
+            <a href="#cards">Tech</a>
+            <a href="#contact-us">Stay In Touch</a>
+        </div>
+    </header>
+
+    <section class="parallax-1">
+        <div class="title-1">
+            <h1>Learn What It Takes To Be Invincible</h1>
+        </div>
+
+    </section>
+
+    <div class="container">
+
+        <section id="hero">
+            <h1>Choose Your Way</h1>
+        </section>
+
+        <section id="cards">
+
+            <article class="card">
+                <img src="img/angular.png" alt="angular">
+                <section class="card-body">
+                    <h5>Angular.Js</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti ullam, ratione
+                        sapiente accusantium doloremque!</p>
+                </section>
+            </article>
+            <article class="card">
+                <img src="img/react.jpg" alt="react">
+                <section class="card-body">
+                    <h5>React.Js</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti ullam, ratione
+                        sapiente accusantium doloremque!</p>
+                </section>
+            </article>
+            <article class="card">
+                <img src="img/vue.png" alt="vue">
+                <section class="card-body">
+                    <h5>Vue.Js</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid deleniti ullam, ratione
+                        sapiente accusantium doloremque!</p>
+                </section>
+            </article>
+
+        </section>
+    </div>
+    <section class="parallax-2">
+        <div class="title-2">
+            <h1>The Best Front-End Media</h1>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2 class="subscribe">Subscribe Our Magazine</h2>
+        <form>
+            <div class="email-bar">
+                <input placeholder="Subscribe..." id="email" type="email">
+                <button>Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(25, 133, 161, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(25, 133, 161, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,343L120,359.3C240,376,480,408,720,367.5C960,327,1200,212,1440,196C1680,180,1920,261,2160,261.3C2400,261,2640,180,2880,179.7C3120,180,3360,261,3600,253.2C3840,245,4080,147,4320,89.8C4560,33,4800,16,5040,65.3C5280,114,5520,229,5760,245C6000,261,6240,180,6480,179.7C6720,180,6960,261,7200,318.5C7440,376,7680,408,7920,424.7C8160,441,8400,441,8640,424.7C8880,408,9120,376,9360,359.3C9600,343,9840,343,10080,318.5C10320,294,10560,245,10800,220.5C11040,196,11280,196,11520,187.8C11760,180,12000,163,12240,187.8C12480,212,12720,278,12960,285.8C13200,294,13440,245,13680,212.3C13920,180,14160,163,14400,179.7C14640,196,14880,245,15120,228.7C15360,212,15600,131,15840,130.7C16080,131,16320,212,16560,277.7C16800,343,17040,392,17160,416.5L17280,441L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z">
+            </path>
+        </svg>
+        <p class="copyright">All Rights Reserved &copy 2022 <br> With 🤍 By Ali Rabiee </p>
+    </footer>
+
+
+</body>
+
+</html>
