@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+</head>
+
+<!-- CSS -->
+
+<style>
+    #captcha {
+        background-color: #aaa;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+</style>
+
+<!-- HTML -->
+
+<body>
+    <h1>Security Code : <span id="captcha"></span></h1>
+
+    <form id="form">
+        <input type="text" placeholder="case sensitive...">
+        <button>Submit</button>
+    </form>
+
+    <!-- JS -->
+
+    <script>
+        const captcha = document.getElementById('captcha');
+        const form = document.getElementById('form');
+
+        const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890';
+        const choices = [...charset]
+        let array = [];
+
+        for (let index = 0; index < 4; index++) {
+            const random = choices[Math.floor(Math.random() * choices.length)];
+            array.push(random)
+        }
+
+        captcha.textContent = array.join(" ");
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const inputValue = form.querySelector('input').value;
+            const code = array.join('')
+            if (inputValue === code) {
+                alert('OK');
+                location.reload()
+            } else {
+                alert('FAILED')
+                location.reload()
+            }
+        })
+    </script>
+</body>
+
+</html>
