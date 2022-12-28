@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(188, 247, 241);
+    color: #777;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
