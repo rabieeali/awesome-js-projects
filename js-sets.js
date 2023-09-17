@@ -104,3 +104,27 @@ guessedLetters.forEach((value) => {
 //8. clear the set
 // guessedLetters.clear()
 // console.log(`was the set cleared ? ${guessedLetters.size === 0 ? 'yes' : 'no'}`)
+
+
+/* weak set */
+// only these methods: add, has, delete
+
+const resOne = { id: 1234 }
+const resTwo = { id: 5678 }
+const resThree = { id: 9012 }
+const resFour = { id: 3456 }
+
+const surveyResponse = new WeakSet();
+surveyResponse
+    .add(resOne)
+    .add(resThree)
+    .add(resTwo)
+    .add(resFour)
+
+// console.log(surveyResponse)
+
+//   console.log(surveyResponse.has(resThree)) // true
+// console.log(surveyResponse.has({ id: 1234 })) // false // it is not the same reference (it does not matter if it is Set or WeakSet)
+
+// surveyResponse.delete(resTwo)
+// console.log('has resThree? ', surveyResponse.has(resTwo))
