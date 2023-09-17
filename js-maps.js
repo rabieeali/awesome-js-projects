@@ -132,3 +132,36 @@ const isSuccessful = movies.delete(2013)
 // 10. clear the map
 movies.clear();
 // console.log('is my movies cleared? ', movies.size)
+
+
+/* weak maps */
+const newYork = { city: 'new york' }
+const nola = { city: 'new orleans' }
+const chicago = { city: 'chicago' }
+const losAngeles = { city: 'los angeles' }
+
+//1. creat a weakmap (keys are object)
+
+const cities = new WeakMap()
+
+cities.set(newYork, newYork.city)
+cities.set(nola, nola.city)
+cities.set(chicago, chicago.city)
+cities.set(losAngeles, losAngeles.city)
+
+// console.log(cities)
+
+//2. value of nola
+
+// console.log(cities.get(nola))
+
+//3. what is the value of dallas?
+const dallas = { city: 'dallas' }
+// console.log(cities.has(cities.get(dallas)))
+
+
+//4. does the map have the key newYork?
+// console.log(cities.has(newYork))
+
+//5. delete chicago
+// console.log(cities.delete(chicago))
